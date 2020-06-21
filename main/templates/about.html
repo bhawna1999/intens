@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <title>intense placement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/styleab.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/bootstrap-4.5.0/css/bootstrap.css' %}">
+  <link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/fontawesome.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/brands.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/solid.css' %}" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<section id="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link " href="{% url 'main:homepage' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Enquiry">Employer's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  " href="Partner">Partner's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="log_sign.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </div>
+<div class="banner text-center">
+    <h1>Welcome to Intense Placement Pvt. Ltd.</h1>
+    <h3>Sourcing & Placing Top Talent</h3>
+    <h5>A leading placement consultant providing recruitment and man power assistance to clients across segments. Endowed by the experience of our team, we are a leader in international recruitment services, multinational recruiting and career placements.
+    </h5>
+    <button type="button" class="btn btn-primary "> Join us</button>
+
+    
+</div>
+</section>
+
+<section class="sec1">
+  
+    <h1 class="text-center"><b>Why Choose Us</b></h1>
+    <div class="card-deck">
+        <div class="card  shadow p-3 mb-5 rounded">
+          <div class="card-body">
+            <h5 class="card-title text-center"><i class="fas fa-cogs"></i> Technical Skills</h5>
+            <p class="card-text">Our bespoke recruiting solutions use the right mix of technology and human intelligence to help you attract and hire candidates who contribute to both your business goals and culture</p>
+          </div>
+        </div>
+        <div class="card  shadow p-3 mb-5 rounded">
+         <div class="card-body">
+            <h5 class="card-title text-center"><i class="fas fa-user-tie"></i> Professional Services</h5>
+            <p class="card-text">We believe in people. We believe in harnessing the human potential to build stellar careers.One of the largest recruitment agencies in the world, we help nurture the ambitions of millions across the world</p>
+          </div>
+        </div>
+        <div class="card  shadow p-3 mb-5 rounded">
+          <div class="card-body">
+            <h5 class="card-title text-center"><i class="fas fa-phone"></i> Great Support</h5>
+            <p class="card-text">We offer temporary and permanent workforce solutions to a large client base spread across industries. Choose us for exceptional consultancy services designed for business growth and operational excellence.</p>
+          </div>
+        </div>
+      </div>
+</section>
+<section class="sec2">
+    <h2 class="text-center"><b>What We Do</b></h2>
+    
+		
+	<div class="card-deck">
+		<div class="card shadow p-3 mb-5" style="height:14rem;">
+			<i class=" card-img-top fas fa-list-alt fa-5x"></i>
+		  <div class="card-body">
+			<h5 class="card-title text-center ">We offer a premium selection of jobs across sectors and levels</h5>
+		  </div>
+		</div>
+		<div class="card shadow p-3 mb-5" style="height:14rem;">
+			<i class=" card-img-top fas fa-search fa-5x"></i>
+		  <div class="card-body">
+			<h5 class="card-title text-center ">We help you to find your dream assignment today</h5>
+		  </div>
+		</div>
+		<div class="card shadow p-3 mb-5" style="height:14rem;">
+			<i class=" card-img-top fas fa-trophy fa-5x"></i>
+		  <div class="card-body">
+			<h5 class="card-title text-center">We build assets that help organizations scale new heights</h5>
+		  </div>
+		</div>
+      </div>	
+      
+	
+</section>
+
+<section class="sec3">
+  <h2 class="text-center"><b>Our Industries of Expertise</b></h2>
+    <h5 class="text-center">Excellence and Success</h5>
+
+    <div class="card-deck">
+		<div class="card shadow p-3 mb-5 ">
+      <i class="fas fa-tasks fa-5x"></i>
+      		  <div class="card-body">
+			<h5 class="card-title">Recruitment Process Outsourcing</h5>
+			<p class="card-text">We act as an extended arm of our clients and help manage their end to end recruitment needs</p>
+		</div>
+		</div>
+		<div class="card shadow p-3 mb-5">
+		  <i class="fas fa-arrow-alt-circle-up fa-5x"></i>
+		  <div class="card-body">
+			<h5 class="card-title">Career Transition Services</h5>
+			<p class="card-text">Comprehensive outplacement services based on unique needs of client</p>
+		  </div>
+		</div>
+		<div class="card shadow p-3 mb-5">
+      <i class="fas fa-stamp fa-5x"></i>		  
+      <div class="card-body">
+			<h5 class="card-title">Executive Search</h5>
+			<p class="card-text">Exclusive and retained our Executive Search Practice is focused on Board and CXO level leadership Hiring</p>
+		  </div>
+		</div>
+	  </div>
+</section>
+<footer class="foot" >
+  follow us on 
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-twitter-square"></i>
+   
+    </footer>
+</body>
+</html>

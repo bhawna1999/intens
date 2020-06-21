@@ -1,0 +1,125 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<head>
+    <title>intense placement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/stylecon.css' %}">
+<link rel="stylesheet" href="{% static 'styles/bootstrap-4.5.0/css/bootstrap.css' %}">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/fontawesome.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/brands.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/solid.css' %}" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="{% static 'styles/bootstrap-4.5.0/js/bootstrap.min.js' %}" ></script>
+</head>
+<body>
+<section id="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link " href="{% url 'main:homepage' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Enquiry">Employer's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  " href="Partner">Partner's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="log_sign.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </div>
+<div class="banner">
+    <h1 class="text-center">Contact Us</h1>
+    
+</div>
+</section>
+<section class="banner2">
+<div class="card-deck">
+    <div class="card">
+        <i class="fas fa-envelope fa-3x"></i>
+        <div class="card-body">
+            <p class="card-text"><a href="#">hr@intenseplacement.com</a> <br>
+                <a href="#" >manager@intenseplacement.com</a>
+            </p>
+        </div>
+    </div>
+    <div class="card ">
+        <i class="fas fa-phone fa-3x"></i>
+        <div class="card-body">
+            <p class="card-text "><a href="#">7011-036-020</a>
+            </p>
+        </div>
+    </div>
+    <div class="card ">
+        <i class="fas fa-map-marker-alt fa-3x"></i>
+        <div class="card-body">
+            <p class="card-text "><a href="#">H-55/A , Shiv Ram Park , Nangloi , New Delhi-41</a>
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="sec2">
+<div class="row">
+    <div class="col-1"></div>
+<div   class="col-4" >
+    <form method="POST">
+        {%csrf_token%}
+        <table>
+            <tr colspan=2>
+                {{form | crispy}}
+                <button type="submit"   class="btn btn-primary text-white">Submit</button>
+            </tr>
+        </table>
+    <!--<form class=" cont">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <input type="phone" class="form-control" name="phone" id="phone" placeholder="Enter your phone">
+        </div>
+        <div class="form-group">
+            <textarea name="message" class="form-control" id="message" cols="10" rows="5" placeholder="Enter your Message"></textarea>
+        </div>
+            </form>-->
+    </form>
+</div>
+
+<div class="col-5 ml-4">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14002.988820098652!2d77.0573458!3d28.667287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95df2576821c9451!2sIntense%20Placement%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1589795151848!5m2!1sen!2sin" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>  
+</section>  
+
+<footer class="foot" >
+  follow us on 
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-twitter-square"></i>
+   
+    </footer>
+</body>
+</html>

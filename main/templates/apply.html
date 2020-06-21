@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>intense placement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styleapply.css' %}">
+<link rel="stylesheet" href="{% static 'styles/bootstrap-4.5.0/css/bootstrap.css' %}">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/fontawesome.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/brands.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/solid.css' %}" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="{% static 'styles/bootstrap-4.5.0/js/bootstrap.min.js' %}" ></script>
+</head>
+<body>
+<section id="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link " href="{% url 'main:homepage' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Enquiry">Employer's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  " href="Partner">Partner's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="log_sign.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </div>
+    
+<div class="banner">
+  <div >
+    <h1 class=" hh text-center" >APPLICATION ZONE</h1>
+    </div>
+    
+      
+		<div class=" appform">
+				<form action="#" id ="aly"class="needs-validation">
+					<div class="form-group ">
+						<input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+					</div>
+					<div class="form-group">
+						<input type="phone" class="form-control" id="contact" placeholder="Contact Number(123-456-7890)" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="city" placeholder="Current City" name="city" required>
+					</div>
+					<div class="form-group">
+					<span class="text-white"> Upload Resume :
+						<input type="file" class="form-control" id="resume" placeholder="Upload Resume" name="resume" required></span>
+					</div>
+					<button type="submit" style="float:right" class="btn btn-primary text-white">Submit</button>
+				</form>
+		</div>
+		
+
+</section>
+    
+    
+
+<footer class="foot" >
+  follow us on 
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-twitter-square"></i>
+   
+    </footer>
+</body>
+</html>

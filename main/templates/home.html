@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>Intense placement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'styles/bootstrap-4.5.0/css/bootstrap.css' %}">
+    <link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/fontawesome.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/brands.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/solid.css' %}" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="{% static 'styles/bootstrap-4.5.0/js/bootstrap.min.js' %}" ></script>
+</head>
+<body>
+<section id="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Enquiry">Employer's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  " href="Partner">Partner's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="log_sign.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </div> 
+
+    <div class="banner text-center">
+    	<!-- <img class="banner-image" src = "{% static 'img/homee.png'%}"> -->
+        <h1 class="  text-white text-center"><b>Design Your Career With Intense<b></h1>
+            <h3 class=" text-center text-white">Looking For a Job ! Join us today</h3>
+            <p class=" text-center text-white"><br> <a class="btn btn-primary text-white" href="candidate.html">I am candidate</a></p> 
+    
+    </div>
+</section>
+
+<div class="search-job text-center">
+    <div>
+        <h1 class="text-center text-white">Find the best job near you</h1>
+        <h4 class="text-center text-white"><span style="color:rgb(246, 250, 3)">1,00,000</span> active job vacancies to grab. </h4>
+    </div>
+    <select class="form-control" id="sel1">
+        <option disabled selected>Job Role</option>
+        <option>Role 1</option>
+        <option>Role 2</option>
+        <option>Role3</option>
+        
+</select>
+<select class="form-control" id="sel1">
+        <option disabled selected>City</option>
+        <option>City 1</option>
+        <option>City 2</option>
+        <option>City 3</option>
+    </select>
+    <select class="form-control" id="sel1">
+        <option disabled selected>District</option>
+        <option> District 1</option>
+        <option> District2 </option>
+        <option>District 3 </option>
+
+    </select>
+    <button type="button" class="btn btn-primary "> Search</button>
+    </div>
+    <section>
+    <h2 class="text-center"><b>Top Job Roles</b></h2>
+    <div class="card-deck" >
+		<div class="card border-info shadow p-3 mb-5 rounded" style="height:10rem;">
+			<i class="card-img-top fas fa-headset fa-5x "></i>
+		  <div class="card-body">
+			<h5 class="card-title text-center">BPO</h5>
+		  </div>
+		</div>
+		<div class="card border-info shadow p-3 mb-5 rounded " style="height:10rem;">
+			<i class=" card-img-top fas fa-laptop-code fa-5x"></i>
+			<div class="card-body">
+				<h5 class="card-title text-center">Data Entry</h5>
+		  	</div>
+		</div>
+		<div class="card border-info shadow p-3 mb-5 rounded " style="height:10rem;">
+			<i class=" card-img-top fas fa-chart-line fa-5x"></i>
+			<div class="card-body">
+				<h5 class="card-title text-center">Marketing</h5>
+		  	</div>
+		</div>
+		<div class="card border-info shadow p-3 mb-5 rounded" style="height:10rem;">
+			<i class=" card-img-top fas fa-landmark fa-5x"></i>
+			<div class="card-body">
+			  <h5 class="card-title text-center">Engineer</h5>
+			</div>
+		</div>
+		<div class="card border-info shadow p-3 mb-5 rounded "style="height:10rem;">
+			<i class=" card-img-top fas fa-file-invoice-dollar fa-5x"></i>
+			<div class="card-body">
+			  <h5 class="card-title text-center">Accountant</h5>
+			</div>
+		</div>
+	</div>
+	<div>
+    <a class="btn btn-primary text-white" style="float: right;" href="jobs.html">View All Jon Roles</a>
+	</section> 
+<br>
+<br>
+
+<footer class="foot" >
+    follow us on 
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-twitter-square"></i>
+    </footer>
+</body>
+</html>

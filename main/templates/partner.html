@@ -1,0 +1,106 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<head>
+    <title>intense placement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/stylepartner.css' %}">
+<link rel="stylesheet" href="{% static 'styles/bootstrap-4.5.0/css/bootstrap.css' %}">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/fontawesome.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/brands.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/fontawesome-free-5.13.0-web/css/solid.css' %}" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="{% static 'styles/bootstrap-4.5.0/js/bootstrap.min.js' %}" ></script>
+</head>
+<body>
+<section id="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link " href="{% url 'main:homepage' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Enquiry">Employer's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  " href="Partner">Partner's Zone</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="log_sign.html">Login/Signup</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </div>
+<div class="banner text-center">
+    <div class="row">
+    <div class=" col-4"><h1 class=" hh text-white">Welcome To Our Partner Zone</h1></div>
+    
+		<div class=" text-white  col-4 ml-1" >
+      <form method="POST">
+        {%csrf_token%}
+        <table>
+          <tr colspan=2>
+            {{form | crispy}}
+              <button type="submit" class="btn btn-primary text-white">Submit</button>
+          </tr>
+        </table>
+      </form>
+				<!--<form action="partnerSubmit" id="pf" class="needs-validation">
+					<select class="form-control" id="sel1">
+						<option disabled selected>Organization Type</option>
+						<option>Placement Agency</option>
+						<option>Freelancer</option>
+						<option>NGO</option>
+						<option>Training Institute</option>
+						<option>Cyber Cafe</option>
+						<option>Colleges</option>
+					</select>
+					<br>
+					<div class="form-group">
+						<input type="text" class="form-control" id="oname" placeholder="Organization Name" name="oname" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+					</div>
+					<div class="form-group">
+						<input type="phone" class="form-control" id="contact" placeholder="Contact Number(123-456-7890)" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="exph" placeholder="Experience in Hiring" name="exph" required>
+					</div>
+					<button type="submit " style="float:right"class="btn btn-primary text-white">Submit</button>
+				</form>-->
+		</div>
+    </div>
+</div>
+</section>
+    
+    
+
+<footer class="foot" >
+  follow us on 
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-twitter-square"></i>
+</footer>
+</body>
+</html>
