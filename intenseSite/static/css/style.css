@@ -1,0 +1,129 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body
+{
+	overflow-x:hidden; 	
+}
+.menu-bar
+{
+    background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+	
+}
+
+.nav-link
+{
+font-size: 16px;
+color: #ffffff !important;
+margin:2px;
+}
+
+.navbar-nav{
+		text-align: right;
+}
+
+.menu-bar .navbar-toggler
+{
+padding-right: 0;
+outline: none;
+border: none;
+}
+
+.navbar-nav a:hover {
+  background-color:#6db9ef;
+
+}
+
+.banner
+{
+	/*padding-top: 50vh;*/
+    height:80vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/static/img/homee.png");
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+}
+
+.banner h1
+{
+padding-top: 120px;
+font-size: 35px;
+letter-spacing: 6px;
+font-weight: 600;
+text-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.search-job
+{
+	padding: 30px 0;
+	margin:  -50px 6% 50px;
+	background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+	border-radius: 30px;
+}
+
+.search-job .form-control{
+	max-width: 250px;
+	display: inline-flex;
+	margin: 10px 5px;
+	border-radius: 0;
+	box-shadow: none !important;
+    border: none !important;
+}
+
+.search-job .btn-primary{
+	border-radius: 0;
+	box-shadow: none !important;
+	display: inline-flex;
+	margin: 5px;
+	padding: 5px 20px;
+}
+
+.dropdown .btn-secondary
+{
+    background-color: #ffffff;
+    color: #000;
+
+}
+.card
+{
+	color:#54cf64 ;
+}
+.card i {
+    padding-top: 5px;
+    text-align:center;
+}
+.card-deck  :hover
+{
+    background-color:#6db9ef ;
+    color: #ffffff;
+
+}
+.foot
+{
+    background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+color: #ffffff;
+}
+
+@media only screen and (max-width: 1400px) {
+    
+    .banner
+    {
+        height: auto;
+		width: auto;
+		font-size: small;
+		
+    }
+	.search-job{
+		margin-top: auto;
+	}
+	.card
+	{
+		min-height: 11rem;
+	}
+	
+
+}
